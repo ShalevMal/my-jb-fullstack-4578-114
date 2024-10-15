@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Git & GitHub </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <h1>פקודות Git & GitHub חיוניות</h1>
+
+    <div class="container">
+        <h2>1. הגדרות בסיסיות למשתמש ב-GitHub</h2>
+        <pre><code>git config --global user.name "Your Name"</code> - הגדרת שם המשתמש ב-GitHub</pre>
+        <pre><code>git config --global user.email "your-email@example.com"</code> - הגדרת כתובת האימייל שלך ב-GitHub</pre>
+
+        <h2>2. יצירת מאגר Git חדש</h2>
+        <pre><code>git init</code> - יצירת מאגר Git חדש בתיקייה הנוכחית</pre>
+
+        <h2>3. חיבור למאגר מרוחק (GitHub)</h2>
+        <pre><code>git remote add origin https://github.com/username/repo.git</code> - חיבור המאגר המקומי שלך למאגר מרוחק ב-GitHub</pre>
+
+        <h2>4. הוספת קבצים לאזור ההמתנה</h2>
+        <pre><code>git add &lt;filename&gt;</code> - הוספת קובץ מסוים לאזור ההמתנה</pre>
+        <pre><code>git add .</code> - הוספת כל הקבצים החדשים/שונו בתיקייה הנוכחית</pre>
+
+        <h2>5. ביצוע Commit לשינויים</h2>
+        <pre><code>git commit -m "Your commit message"</code> - ביצוע Commit לקבצים המוכנים עם הודעה תיאורית</pre>
+
+        <h2>6. דחיפת השינויים למאגר מרוחק (GitHub)</h2>
+        <pre><code>git push -u origin &lt;branch-name&gt;</code> - דחיפת הסניף הנוכחי ל-GitHub</pre>
+        <pre><code>git push</code> - דחיפת השינויים האחרונים שבוצעו ל-GitHub</pre>
+
+        <h2>7. משיכת שינויים ממאגר מרוחק (GitHub)</h2>
+        <pre><code>git pull</code> - משיכת ומיזוג שינויים מהמאגר המרוחק לסניף הנוכחי</pre>
+
+        <h2>8. יצירת סניף חדש</h2>
+        <pre><code>git branch &lt;new-branch-name&gt;</code> - יצירת סניף חדש</pre>
+        <pre><code>git checkout -b &lt;new-branch-name&gt;</code> - יצירת סניף חדש ומעבר אליו</pre>
+
+        <h2>9. מעבר בין סניפים</h2>
+        <pre><code>git checkout &lt;branch-name&gt;</code> - מעבר לסניף קיים</pre>
+
+        <h2>10. מיזוג סניפים</h2>
+        <pre><code>git merge &lt;branch-name&gt;</code> - מיזוג הסניף הנבחר לתוך הסניף הנוכחי</pre>
+
+        <h2>11. בדיקת סטטוס המאגר</h2>
+        <pre><code>git status</code> - הצגת מצב התיקייה הנוכחית ואזור ההמתנה</pre>
+
+        <h2>12. הצגת היסטוריית הקומיטים</h2>
+        <pre><code>git log</code> - הצגת היסטוריית כל הקומיטים בסניף הנוכחי</pre>
+
+        <h2>13. ביטול שינויים</h2>
+        <pre><code>git reset &lt;file&gt;</code> - הסרת קובץ מאזור ההמתנה</pre>
+        <pre><code>git checkout -- &lt;file&gt;</code> - שחזור שינויים לקובץ (ביטול שינויים מקומיים)</pre>
+
+        <h2>14. מחיקת סניף</h2>
+        <pre><code>git branch -d &lt;branch-name&gt;</code> - מחיקת סניף מקומי</pre>
+
+        <h2>15. שכפול מאגר מרוחק (GitHub)</h2>
+        <pre><code>git clone https://github.com/username/repo.git</code> - שכפול מאגר GitHub למחשב המקומי</pre>
+
+        <h2>16. משיכת ומיזוג סניפים עם המאגר המרוחק</h2>
+        <pre><code>git fetch</code> - משיכת כל השינויים מהמאגר המרוחק</pre>
+        <pre><code>git pull</code> - משיכת ומיזוג שינויים למאגר המקומי</pre>
+
+        <h2>17. הצגת רשימת סניפים</h2>
+        <pre><code>git branch</code> - רשימת סניפים מקומיים</pre>
+        <pre><code>git branch -r</code> - רשימת סניפים מרוחקים</pre>
+        <pre><code>git branch -a</code> - רשימת סניפים מקומיים ומרוחקים</pre>
+
+        <h2>18. תהליך עבודה לסיום עבודה על סניף</h2>
+        <pre><code>git push origin &lt;branch-name&gt;</code> - דחיפת הסניף ל-GitHub</pre>
+        <pre><code>git checkout main</code> - מעבר לסניף main</pre>
+        <pre><code>git merge &lt;branch-name&gt;</code> - מיזוג הסניף שהושלם ל-main</pre>
+        <pre><code>git branch -d &lt;branch-name&gt;</code> - מחיקת הסניף (במקומי)</pre>
+
+        <h2>19. עבודה עם תגיות (גרסאות)</h2>
+        <pre><code>git tag &lt;tag-name&gt;</code> - יצירת תג חדש (בדרך כלל לסימון גרסאות)</pre>
+        <pre><code>git push origin &lt;tag-name&gt;</code> - דחיפת התג ל-GitHub</pre>
+    </div>
+
+</body>
+
+</html>
