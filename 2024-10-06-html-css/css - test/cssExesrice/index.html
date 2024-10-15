@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors - אתר למידה</title>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">הקדמה</a></li>
+                <li><a href="#types">סוגים של Selectors</a></li>
+                <li><a href="#examples">דוגמאות קוד</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>מהם CSS Selectors?</h2>
+            <p>CSS Selectors הם כלים המאפשרים לבחור אלמנטים בדף HTML כדי לעצב אותם. באמצעות selectors, ניתן לשלוט במראה
+                של אלמנטים שונים על פי תכונותיהם.</p>
+            <p>ה-selector הראשון שייבחר בדף הוא זה שיגרום לשינוי במראה האלמנט. אם מספר selectors מתאימים לאותו אלמנט,
+                ה-selector הראשון שיגיע בקוד הוא זה שיתקבל.</p>
+            <p>ישנם סוגים שונים של CSS Selectors, וכל אחד מהם משמש למטרות שונות בהתאם לצורך בעיצוב.</p>
+        </section>
+
+        <section id="types">
+            <h2>סוגים של CSS Selectors</h2>
+            <ul>
+                <li><strong>Selector לפי תגית:</strong> בוחר אלמנטים לפי שם התג. לדוגמה, <code>p</code> בוחר את כל תגי
+                    הפסקה.</li>
+                <li><strong>Selector לפי class:</strong> בוחר אלמנטים בעלי class מסוים. לדוגמה, <code>.my-class</code>
+                    בוחר את כל האלמנטים עם class בשם "my-class".</li>
+                <li><strong>Selector לפי id:</strong> בוחר אלמנט עם id מסוים. לדוגמה, <code>#my-id</code> בוחר את האלמנט
+                    עם id בשם "my-id".</li>
+                <li><strong>Attribute Selector:</strong> בוחר אלמנטים לפי תכונת attribute. לדוגמה,
+                    <code>[type="text"]</code> בוחר את כל האלמנטים עם attribute type ששווה ל-"text".
+                </li>
+                <li><strong>Combinators:</strong> משתמשים ביחסים בין אלמנטים כדי לבחור אלמנטים. לדוגמה,
+                    <code>div p</code> בוחר את כל הפסקאות שנמצאות בתוך תגי div.
+                </li>
+                <li><strong>Pseudo-classes:</strong> בוחרים אלמנטים לפי מצבם. לדוגמה, <code>a:hover</code> משנה את צבע
+                    הקישור כאשר העכבר עובר עליו.</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>דוגמאות קוד</h2>
+            <h3>Selector לפי תגית</h3>
+            <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}</code></pre>
+            <p>דוגמה זו משנה את צבע הפסקאות לכחול.</p>
+
+            <h3>Selector לפי class</h3>
+            <pre><code>.my-class {
+    background-color: yellow;
+    padding: 10px;
+}</code></pre>
+            <p>במקרה זה, כל אלמנט עם class "my-class" יקבל רקע צהוב.</p>
+
+            <h3>Selector לפי id</h3>
+            <pre><code>#my-id {
+    font-weight: bold;
+}</code></pre>
+            <p>במקרה זה, האלמנט עם id "my-id" יהיה מודגש.</p>
+
+            <h3>Attribute Selector</h3>
+            <pre><code>[type="text"] {
+    border: 1px solid black;
+}</code></pre>
+            <p>דוגמה זו מוסיפה גבול שחור לכל האלמנטים עם attribute type ששווה ל-"text".</p>
+
+            <h3>Combinator Selector</h3>
+            <pre><code>div p {
+    margin: 0;
+}</code></pre>
+            <p>דוגמה זו מסירה את המרג'ין מהפסקאות שנמצאות בתוך תגי div.</p>
+
+            <h3>Pseudo-class Selector</h3>
+            <pre><code>a:hover {
+    color: red;
+}</code></pre>
+            <p>הקישור יהפוך לאדום כאשר העכבר עובר עליו.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 אתר למידה. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+
+</html>

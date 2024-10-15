@@ -1,0 +1,80 @@
+h1 {
+    color: rgba(89, 0, 255, 0.422);
+    background-color: palevioletred;
+}
+
+p {
+    color: red;
+    background-color: rgb(243, 207, 243);
+}
+
+/* class selector */
+.cool-design {
+    color: rgb(35, 89, 63);
+    background-color: rgb(101, 96, 97);
+}
+
+p.cool-design {
+    color: rgb(35, 89, 63);
+    background-color: rgb(101, 96, 97);
+}
+
+.cool-design-big {
+    font-size: xx-large;
+    font-weight: bold;
+    color: brown;
+}
+
+/* id selector */
+#last-paragraph {
+    font-size: xx-small;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* attribute selector  */
+input[placeholder="first name"] {
+    border: 3px dashed;
+}
+
+/* psaudo selector */
+a {
+    color: blue;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: rgb(128, 0, 0);
+    font-size: x-large;
+}
+
+p::first-letter {
+    font-size: larger;
+    color: rgb(18, 3, 33);
+}
+
+p::first-line {
+    font-size: large;
+    color: rgba(56, 0, 108, 0.371);
+}
+
+span {
+    color: brown;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p a {
+    color: black;
+}
+
+p>a {
+    border: 3px dashed gray;
+}

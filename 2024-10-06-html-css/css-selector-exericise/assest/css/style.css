@@ -1,0 +1,17 @@
+html {
+    text-align: center;
+    color: rgb(147, 51, 89);
+    border: 1px solid black;
+}
+
+
+#form {
+    background-color: yellow;
+
+
+}
+
+input[type="search"] {
+    background-color: yellowgreen;
+    text-align: center;
+}

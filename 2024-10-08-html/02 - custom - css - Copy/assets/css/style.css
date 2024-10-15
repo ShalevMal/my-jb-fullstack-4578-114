@@ -1,0 +1,59 @@
+@font-face {
+    font-family: adineKirnberg;
+    src: url(/assets/fonts/adineKirnberg.ttf);
+}
+
+h1 {
+    text-align: center;
+    font-family: adineKirnberg;
+    transform: 2s;
+    transform: rotate(-15dag) scale(0.5);
+    font-size: 100px;
+
+}
+
+
+h1:hover {
+    color: green;
+    transform: rotate(15dag) scale(2);
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-size: 40px;
+}
+
+@keyframes Myanimma {
+    from {
+        color: blue;
+        transform: scale(2);
+    }
+
+    to {
+        color: red;
+        transform: scale(0.5);
+    }
+}
+
+p {
+    text-align: center;
+    margin-top: 100px;
+}
+
+p:hover {
+    animation: MyLongAnime 3s infinite alternate linear;
+}
+
+@keyframes MyLongAnime {
+    0% {
+        color: blueviolet;
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 32px;
+    }
+}
